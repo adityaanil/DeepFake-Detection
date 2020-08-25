@@ -80,4 +80,5 @@ We can further modify the architecture of the model by tuning the hyperparameter
 1. Aditya, Lalita: DeepFake Detection
 2. Neha: Fake Currency Detection
 3. Saran, Bevin: Attribute manipulation and Expression Swap
-4. Aditya: Project Manager
+4. Akshita: 
+5. Aditya: Project Manager
