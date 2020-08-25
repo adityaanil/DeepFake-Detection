@@ -77,10 +77,7 @@ We can further modify the architecture of the model by tuning the hyperparameter
 
 ## Roles of collaborators
 
-1. Aditya, Lalita: Exploratory data analysis
-2. Akshita, Neha: Feature extraction from the image
-3. Saran: Feature engineering using prediction of importance
-4. Bevin: Face extraction
-5. Task of modeling will be distributed among all the collaborators
-6. Aditya: Project Manager
-
+1. Aditya, Lalita: DeepFake Detection
+2. Neha: Fake Currency Detection
+3. Saran, Bevin: Attribute manipulation and Expression Swap
+4. Aditya: Project Manager
