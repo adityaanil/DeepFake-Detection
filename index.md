@@ -42,6 +42,9 @@ With the advancement in image processing techniques and with the integration of 
 
 Thus, it is imperative to find a way to detect these fake images. We will be using deep learning techniques to try and discern between real and fake images. (more to follow) 
 
+## 1.3 Face Swap Generation and Detection 
+
+Another creative exploitation of deep learning is the creation of photo-realistic face-swapped images usually without the consent of the parties involved. Although this does have applications in the world of gaming and entertainment, in the wrong hands it could used for doing fraud or other malicious activities. There has already been an incident where a number of attackers created compromising videos and images of celebrities using face swapping. A detection system could've prevented that. 
 
 ## Method 
 
@@ -80,5 +83,5 @@ We can further modify the architecture of the model by tuning the hyperparameter
 1. Aditya, Lalita: DeepFake Detection
 2. Neha: Fake Currency Detection
 3. Saran, Bevin: Attribute manipulation and Expression Swap
-4. Akshita: 
+4. Akshita: Face Swap Generation and Detection 
 5. Aditya: Project Manager
