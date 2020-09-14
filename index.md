@@ -46,6 +46,20 @@ Thus, it is imperative to find a way to detect these fake images. We will be usi
 
 Another creative exploitation of deep learning is the creation of photo-realistic face-swapped images usually without the consent of the parties involved. Although this does have applications in the world of gaming and entertainment, in the wrong hands it could used for doing fraud or other malicious activities. There has already been an incident where a number of attackers created compromising videos and images of celebrities using face swapping. A detection system could've prevented that. 
 
+This project is going to involve two different phases:
+
+Phase 1:
+Generation of face-swapped images to create a dataset for training the model in the next phase of detection. This is a necessary step because of the unavailablity of a good dataset for the given problem.
+
+Face Swapping involves several steps such as:
+1. A face detector is applied to narrow down the facial region of interest(ROI). 
+2. Then, the head position and the facial landmarks are used to build a perspective model.
+3. Adjustments are made to fit the source image into the target area using an algorithm.
+4. Blending is applied that fuses the source face into the target area.
+
+Phase2:
+Detection will include training a binary classifier using the acquired dataset by using several layers to give high accuracy. Also, giving a score which will give the confidence metric to indicate how reliable the result obtained is. This is an important step because it would help us in making critical decisions. 
+
 ## Method 
 
 ## 1. Exploratory Analysis (EDA)
