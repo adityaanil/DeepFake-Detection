@@ -35,6 +35,13 @@ Example:
 •	Playsound: pure Python, cross platform, single function module with no dependencies for playing sounds.
 •	Subprocess: The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.
 •	Os: for supporting operating system dependent functionalities. 
+#### Links for the Tried Code: 
+https://colab.research.google.com/drive/1_puYe0GlhYsFTnvjSh-sdY0Fw63gE3ga?usp=sharing 
+https://colab.research.google.com/drive/1Jp0vZ56T6bnIvjGPSB2KO784dqg46QU2?usp=sharing
+https://colab.research.google.com/drive/1sk1nAfmoeaph4J8MWDqolNy5asd8bSkX?usp=sharing
+https://colab.research.google.com/drive/1M9pgWlJKz5lalMV4IvJUlTsmM-owqVAr?usp=sharing 
+#### Video Explaination:
+
 
 ## 1.2 DeepFake Detection
 
