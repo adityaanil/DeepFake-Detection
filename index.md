@@ -21,7 +21,7 @@ Although, most deepfakes are created for harmless fun or artistic works. There i
 
 ## Sections 
 
-## 1.1 Fake Currency Detection
+## 1.1 Currency denomination and Fake Currency Detection
 Technology is growing in no time lately. Consequently, the banking sector is additionally obtaining modern-day by day. This brings a deep would like of automatic faux currency detection in the machine and automatic product merchant machine. several researchers are inspired to develop strong and economical automatic currency detection machine. The proposed system gives an approach to verify the Indian currency notes. Verification of currency note is done by the concepts of image processing. Apart from Image acquisition the two main aspects of the system is feature extraction and detection.
 1.	Acquisition: Acquisition of image is a method of making digital pictures, from a physical scene. Here, the image is captured by a straightforward camera specified all the options are highlighted. Image is then hold on for the additional process.
 2.	Feature extraction :  Sometimes too much information can reduce the effectiveness of data mining. Some of the columns of data attributes assembled for building and testing a model may not contribute meaningful information to the model. Some may actually detract from the quality and accuracy of the model. Feature extraction is a process of dimensionality reduction by which an initial set of raw data is reduced to more manageable groups for processing.  Feature extraction is the name for methods that select and /or combine variables into features, effectively reducing the amount of data that must be processed, while still accurately and completely describing the original data set. There are many algorithms for feature extraction, most popular of them are SURF, ORB, SIFT, BRIEF. Most of these algorithms based on image gradient. The method that we would be using for our project is: ORB. This is a one shot facial recognition algorithm. ORB is preferred over most Algorithms and it is said to be a more efficient algorithm compared to as compared to SIFT and SURF. ORB is widely used due to its ability of being rotational and scale invariant. Also ORB being not patented also makes it feasible for our project. 
@@ -41,7 +41,7 @@ https://colab.research.google.com/drive/1Jp0vZ56T6bnIvjGPSB2KO784dqg46QU2?usp=sh
 https://colab.research.google.com/drive/1sk1nAfmoeaph4J8MWDqolNy5asd8bSkX?usp=sharing
 https://colab.research.google.com/drive/1M9pgWlJKz5lalMV4IvJUlTsmM-owqVAr?usp=sharing 
 #### Video Explaination:
-
+https://drive.google.com/file/d/1n4lZgwZVk0rWYtlLF7-Sdgv0l45KO04l/view?usp=sharing 
 
 ## 1.2 DeepFake Detection
 
@@ -102,7 +102,7 @@ We can further modify the architecture of the model by tuning the hyperparameter
 ## Roles of collaborators
 
 1. Aditya, Lalita: DeepFake Detection
-2. Neha: Fake Currency Detection
+2. Neha: Currency denomination and Fake Currency Detection
 3. Saran, Bevin: Attribute manipulation and Expression Swap
 4. Akshita: Face Swap Generation and Detection 
 5. Aditya: Project Manager
