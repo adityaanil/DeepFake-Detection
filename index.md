@@ -67,6 +67,12 @@ Face Swapping involves several steps such as:
 Phase2:
 Detection will include training a binary classifier using the acquired dataset by using several layers to give high accuracy. Also, giving a score which will give the confidence metric to indicate how reliable the result obtained is. This is an important step because it would help us in making critical decisions. 
 
+
+## 1.4 Attribute Manipulation
+
+The popular technique seen to be used for attribute manipulation is GAN. Therefore our strategy to detect these types of fakes is to create a system that can learn from the GAN generation process. For this, instead of doing usual classification task, we train a discriminator to do the task. This enables our system to have a greater insight into how the fakes are produced, and thereby gives a better chance at predicting correctly.
+
+
 ## Method 
 
 ## 1. Exploratory Analysis (EDA)
