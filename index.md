@@ -72,7 +72,11 @@ Detection will include training a binary classifier using the acquired dataset b
 
 The popular technique seen to be used for attribute manipulation is GAN. Therefore our strategy to detect these types of fakes is to create a system that can learn from the GAN generation process. For this, instead of doing usual classification task, we train a discriminator to do the task. This enables our system to have a greater insight into how the fakes are produced, and thereby gives a better chance at predicting correctly.
 
+We use the CelebA dataset that contains pictures of celebrity faces. What is below is a sample image of resolution 112x112. The images are converted to lower resolution due to the fact that computational complexity increses very quickly with the resolution.
+
 <img src="images/celeb_preview.png" class="inline"/>
+
+We use 4096 images of celebrities to train our discriminator.
 
 ## Method 
 
