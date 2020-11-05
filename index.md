@@ -51,22 +51,51 @@ Thus, it is imperative to find a way to detect these fake images. We will be usi
 
 ## 1.3 Face Swap Generation and Detection 
 
-Another creative exploitation of deep learning is the creation of photo-realistic face-swapped images usually without the consent of the parties involved. Although this does have applications in the world of gaming and entertainment, in the wrong hands it could used for doing fraud or other malicious activities. There has already been an incident where a number of attackers created compromising videos and images of celebrities using face swapping. A detection system could've prevented that. 
+Another creative exploitation of deep learning is the creation of photo-realistic face-swapped images. Here, one a source image is swapped onto a target image. Several image processing techniques are used to generate realistic results taking into account the size, expression and tone differences that may exist in the two images. 
 
 This project is going to involve two different phases:
 
-Phase 1:
-Generation of face-swapped images to create a dataset for training the model in the next phase of detection. This is a necessary step because of the unavailablity of a good dataset for the given problem.
-
-Face Swapping involves several steps such as:
+#### Face Swapping involves several steps such as:
 1. A face detector is applied to narrow down the facial region of interest(ROI). 
 2. Then, the head position and the facial landmarks are used to build a perspective model.
 3. Adjustments are made to fit the source image into the target area using an algorithm.
 4. Blending is applied that fuses the source face into the target area.
 
-Phase2:
-Detection will include training a binary classifier using the acquired dataset by using several layers to give high accuracy. Also, giving a score which will give the confidence metric to indicate how reliable the result obtained is. This is an important step because it would help us in making critical decisions. 
+### Concepts Used 
 
+####  Facial Landmark Detection
+
+Facial feature detection is also referred to as “facial landmark detection” or “facial keypoint detection”. Facial keypoints refer to salient features of a face. These are used whenever more information is required about the face such as facial expression, the angle of the face and so on. It has certain highly useful applications. For example it can be used to align the facial images to a mean face shape, so that the location of the facial landmarks in all the images is approximately the same. This helps because face recognition algorithms trained with aligned images perform better as has been both proven by several research papers. Landmark points also enable us to estimate the pose of the head and can consequently be used in drowsiness-detection applications. 
+
+Here, it has been used because the geometry of the two faces may be different and so we might be required to warp the source face a bit to fit onto the target face. 
+
+This is done here using dlib which is a library containing pre-trained models of Image Processing, Machine Learning in C++ and Python. I use this because of its fast and highly accurate. There are however, several other alternatives to it such as Face++, CLM framwork and Haar Cascades of OpenCV. Dlib's facial landmark detector gives us 68 landmark points. 
+
+#### Delaunay Triangulation and Voronoi Diagram
+
+Given a set of points in a plane, a triangulation refers to the subdivision of the plane into triangles, with the points as vertices. 
+
+A set of points can have many possible triangulations, but Delaunay triangulation stands out because of its certain properties. In Delaunay triangulation, triangles are chosen such that no point is inside the circumcircle of any triangle. It does not favor "thin triangles", that is triangles with one large angle.
+
+Voronoi Diagram of a set of points is the mathematical dual to its Delaunay triangulation. Given a set of points in a plane, the Voronoi diagram partitions the space such that the boundary lines are equidistant from neighboring points. Connecting the points in neighboring Voronoi regions, gives the Delaunay triangulation.
+
+
+####  Triangle Morphing
+
+Image morphing creates an image between two images, I and J by blending the images using a controlled parameter, alpha. Alpha can take values between 0 to 1 such that when it is 0 we get I and when it is 1, we get J. 
+
+This equation is to be applied at every pixel:
+M(x,y)=(1-alpha) I(x,y) + alpha J(x,y)
+
+However, thsi does not give us a result as expected. We should first align the faces before performing blending. That is use pixel correspondence. To intelligently blend, the two images, we pick corresponding triangles from the two images, calculate the affine tranform that maps the three corners of one triangle to the three corners of another triangle. In OpenCv it is done using the getAffineTransform. Then, the triangles from the source image are warped using the warpAffine function. This function is designed to take in an image and not a triangle and so, we are required to create a bounding box for it and then mask the pixels outside. The mask is created a function, fillConvexPoly. 
+
+#### Seamless Cloning 
+
+Seamless Cloning allows us to take an object from one image and place it into another but seamlessly. That is, it looks natural. OpenCV has two modes of seamless cloning, NORMAL and MIXED. Mixed gives better results because it ratains teh texture of the image the object is placed upon. Therefore, we'll be going with that here.
+
+
+### Link for the Colab file:
+https://colab.research.google.com/drive/1daNzi_whfKj83IEM-_Hg2p0RJKNnvyQ5?usp=sharing
 
 ## 1.4 Attribute Manipulation
 
@@ -112,10 +141,12 @@ Everything leads up to modeling, where we build a deep neural netwrok model whic
 
 We can further modify the architecture of the model by tuning the hyperparameters, with a consideration for both accuracy and computaional complexity, to find the best model architecture which suits our need. Some things we can do are to add dropout layers, change the number of nodes in the layers, change the number of layers, change the learning rate of the model, and to try different optimizers. Neural networks provide us with a vast set of modeling possibilities. We can also experiment with different set of features (see 2.1) to perfect our detection.
 
+
+
 ## Roles of collaborators
 
 1. Aditya, Lalita: DeepFake Detection
 2. Neha: Currency denomination and Fake Currency Detection
 3. Saran, Bevin: Attribute manipulation and Expression Swap
-4. Akshita: Face Swap Generation and Detection 
+4. Akshita: Face Swapping 
 5. Aditya: Project Manager
