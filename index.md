@@ -49,7 +49,7 @@ With the advancement in image processing techniques and with the integration of 
 
 Thus, it is imperative to find a way to detect these fake images. We will be using deep learning techniques to try and discern between real and fake images. (more to follow) 
 
-## 1.3 Face Swap Generation and Detection 
+## 1.3 Face Swapping 
 
 Another creative exploitation of deep learning is the creation of photo-realistic face-swapped images. Here, one a source image is swapped onto a target image. Several image processing techniques are used to generate realistic results taking into account the size, expression and tone differences that may exist in the two images. 
 
