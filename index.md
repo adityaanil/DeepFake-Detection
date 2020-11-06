@@ -51,7 +51,7 @@ Thus, it is imperative to find a way to detect these fake images. We will be usi
 
 ## 1.3 Face Swapping 
 
-Another creative exploitation of deep learning is the creation of photo-realistic face-swapped images. Here, one a source image is swapped onto a target image. Several image processing techniques are used to generate realistic results taking into account the size, expression and tone differences that may exist in the two images. 
+Another creative exploitation of image processing is the creation of photo-realistic face-swapped images. Here, one a source image is swapped onto a target image. Several image processing techniques are used to generate realistic results taking into account the size, expression and tone differences that may exist in the two images. 
 
 This project is going to involve two different phases:
 
