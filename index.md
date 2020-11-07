@@ -29,11 +29,8 @@ Distinctive Features:
 •	Key Point Matching.
 •	Corners 
 •	Binary vectors
-3.	Detection: Here detection of the fake notes are performed. Various libraries are used along with additional features like:
-Example:  
-•	Playsound: pure Python, cross platform, single function module with no dependencies for playing sounds.
-•	Subprocess: The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.
-•	Os: for supporting operating system dependent functionalities. 
+3.	Detection: Detection of the denominations are done by feature extraction/ image processing completely. For the fake currency detection I deployed deep learning techniques for the task of identifying fake currency notes, using the VGG-16 deep convolutional neural network model. Noted on how deep convolutional neural networks can work as feature extractors and thus no image processing techniques need to be applied to manually find the presence of security features in a note. 
+The generated data-set did not represent the real-world scenario of fake currency notes. Under the availability of a real data-set, the deep neural networks can be better trained.
 #### Links for the Tried Code: 
 https://colab.research.google.com/drive/1_puYe0GlhYsFTnvjSh-sdY0Fw63gE3ga?usp=sharing 
 https://colab.research.google.com/drive/1nhhAkU59mpNsYOATNjXniaZhRerDwO8V?usp=sharing
