@@ -31,16 +31,12 @@ Distinctive Features:
 •	Binary vectors
 3.	Detection: Here detection of the fake notes are performed. Various libraries are used along with additional features like:
 Example:  
-•	GTTS(Google Text-to-Speech).  a Python library and CLI tool to interface with Google Translate's text-to-speech API. Writes spoken mp3 data to a file, a file-like object (bytestring) for further audio manipulation, or stdout, 
 •	Playsound: pure Python, cross platform, single function module with no dependencies for playing sounds.
 •	Subprocess: The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.
 •	Os: for supporting operating system dependent functionalities. 
 #### Links for the Tried Code: 
 https://colab.research.google.com/drive/1_puYe0GlhYsFTnvjSh-sdY0Fw63gE3ga?usp=sharing 
-https://colab.research.google.com/drive/1Jp0vZ56T6bnIvjGPSB2KO784dqg46QU2?usp=sharing
-https://colab.research.google.com/drive/1sk1nAfmoeaph4J8MWDqolNy5asd8bSkX?usp=sharing
- 
-
+https://colab.research.google.com/drive/1nhhAkU59mpNsYOATNjXniaZhRerDwO8V?usp=sharing
 ## 1.2 DeepFake Detection
 
 With the advancement in image processing techniques and with the integration of machine learning and deep learning techniques into the image processing domain, it has become easier than ever to manipulate images. One could synthesise entirely unseen faces with the help of a technology known as GANs (Generative Adversarial Networks).  This method is popularly known as DeepFakes. The results are breathtakingly realistic, to the point that humans cannot distinguish the fakes from the original images with bare eyes. There are many uses for this technology, for instance in the video game and 3D-Modelling industries. However, this could be used for creating fake social media profiles to carry out phishing activities or generate misinformation. 
