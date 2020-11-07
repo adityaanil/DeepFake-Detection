@@ -39,9 +39,7 @@ Example:
 https://colab.research.google.com/drive/1_puYe0GlhYsFTnvjSh-sdY0Fw63gE3ga?usp=sharing 
 https://colab.research.google.com/drive/1Jp0vZ56T6bnIvjGPSB2KO784dqg46QU2?usp=sharing
 https://colab.research.google.com/drive/1sk1nAfmoeaph4J8MWDqolNy5asd8bSkX?usp=sharing
-https://colab.research.google.com/drive/1M9pgWlJKz5lalMV4IvJUlTsmM-owqVAr?usp=sharing 
-#### Video Explaination:
-https://drive.google.com/file/d/1n4lZgwZVk0rWYtlLF7-Sdgv0l45KO04l/view?usp=sharing 
+ 
 
 ## 1.2 DeepFake Detection
 
