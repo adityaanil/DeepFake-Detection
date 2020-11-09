@@ -43,7 +43,17 @@ https://colab.research.google.com/drive/1YvS_hb5TYibhzjLRBmujKCueC7Q6O6Ha?usp=sh
 
 With the advancement in image processing techniques and with the integration of machine learning and deep learning techniques into the image processing domain, it has become easier than ever to manipulate images. One could synthesise entirely unseen faces with the help of a technology known as GANs (Generative Adversarial Networks).  This method is popularly known as DeepFakes. The results are breathtakingly realistic, to the point that humans cannot distinguish the fakes from the original images with bare eyes. There are many uses for this technology, for instance in the video game and 3D-Modelling industries. However, this could be used for creating fake social media profiles to carry out phishing activities or generate misinformation. 
 
-Thus, it is imperative to find a way to detect these fake images. We will be using deep learning techniques to try and discern between real and fake images. (more to follow) 
+GANs are networks that are trained to learn a dataset’s probability distribution from the result of the competition between the two neural networks, Generator and Discriminator. This forms a double feedback loop with the discriminator getting trained to distinguish between the real and the fake and the generator being trained to outdo the performance of the discriminator and generating images that the discriminator cannot distinguish as fake. Firstly, we need to understand what are generative and discriminative models. Unsupervised learning is a type of machine learning which is used to draw inferences and look for undetected patterns in the given dataset with no labelled responses given to the learning algorithm. Generative models belong to this branch of machine learning. Discriminative models belong to the supervised machine learning models which make predictions by understanding the input-output pattern of the original dataset.
+
+### Generative model
+
+This incorporates the joint probability of x and y. In generative models, given some training dataset, we have to create a system that will generate new data. In order to do this, the training data is represented as some kind of distribution. Once we get the range of this distribution, we can obtain some points on it which do not belong to the original dataset i.e. we obtain newly generated datapoints which seem very similar to the original data. Basically, we can obtain new data if we understand the distribution of the existing data. However, the generative model requires a lot of data and takes longer to train.
+
+### Discriminative model
+
+This incorporates the probability of y given x. It finds the probability of a label, given the inputs. The basic objective of this model, as the name suggests is to discriminate or differentiate between two labels. It is easy to model and is used only to classify the data or label the data i.e. it is a binary classifier. This model learns the boundaries between classes. GANs or Generative Adversarial Networks are one of the most commonly used approaches for the generation of data. In a GAN the main objective to achieve an equilibrium between the generator network and the discriminator network.
+
+<img src="https://raw.githubusercontent.com/adityaanil/DeepFake-Detection/master/Images/gan.png" class="inline"/>
 
 ## 1.3 Face Swapping 
 
